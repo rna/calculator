@@ -1,4 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Display from './Display';
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'));
+function App() {
+  return (
+    <div>
+      <Display />
+    </div>
+  );
+}
+
+export default App;
