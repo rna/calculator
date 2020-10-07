@@ -76,8 +76,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [OpenWeatherMap](https://api.openweathermap.org)
-- [Giphy](https://giphy.com)
 
 ## 📝 License
 
