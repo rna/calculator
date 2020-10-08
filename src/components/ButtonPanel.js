@@ -6,7 +6,7 @@ const ButtonPanel = () => {
 
   const operators = ['÷', 'x', '-', '+', '='];
 
-  const mappedElements = () => groups.map(group => <div>{group.map(element => <Button key={element} name={element} color={operators.indexOf(element) === -1 ? 'lightgray' : undefined} wide={element === '0'} />)}</div>);
+  const mappedElements = () => groups.map(group => <div key={group}>{group.map(element => <Button key={element} name={element} color={operators.indexOf(element) === -1 ? 'lightgray' : undefined} wide={element === '0'} />)}</div>);
 
   return (
     <div className="button-panel">
