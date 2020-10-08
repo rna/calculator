@@ -1,4 +1,53 @@
+$main-width: 700px;
+
 body {
   margin: 0;
-  background-color: aqua;
+}
+
+.app {
+  width: $main-width;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display {
+  display: flex;
+  background-color: grey;
+  height: 100px;
+  width: $main-width;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  padding: 20px 20px;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.button-panel {
+  display: flex;
+  width: $main-width;
+  flex-direction: column;
+  color: black;
+  div {
+    display: flex;
+    height: 100px;
+    width: 100%;
+  
+    button {
+      width: 25%;
+      border: 1px solid lightgray;
+      font-size: 24px;
+    }
+    .wide {
+      width: 50%;
+    }
+
+    .light {
+      background-color: #e0e0e0;
+    }
+
+    .dark {
+      background-color: orange;
+    }
+  }
 }
