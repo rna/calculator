@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+.app {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: grey;
+  height: 100px;
+  width: 700px;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  padding: 20px 20px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.button-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: black;
+}
+
+.button-panel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.button-panel div button {
+  width: 25%;
+  border: 1px solid darkgray;
+  font-size: 24px;
+}
+
+.button-panel div .wide {
+  width: 50%;
+}
