@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Button(props) {
-  const { buttonName } = props;
+  const { name } = props;
   return (
-    <div>
-      {buttonName}
-    </div>
+    <button type="button">
+      {name}
+    </button>
   );
 }
 
 Button.propTypes = {
-  buttonName: PropTypes.string,
+  name: PropTypes.string,
 };
 
 Button.defaultProps = {
-  buttonName: '',
+  name: '',
 };
 
 export default Button;
