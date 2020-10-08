@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Button = ({ name, wide, color }) => {
   const styleClasses = [wide ? 'wide' : '', color].join(' ');
   return (
-    <button type="button" className={styleClasses}>
+    <button type="button" style={{ backgroundColor: color }} className={styleClasses}>
       {name}
     </button>
   );
@@ -18,7 +18,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   wide: '',
-  color: 'dark',
+  color: 'orange',
 };
 
 export default Button;
