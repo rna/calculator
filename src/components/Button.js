@@ -18,6 +18,7 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   wide: PropTypes.bool,
   color: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
