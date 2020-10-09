@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Button = ({
   name, wide, color, clickHandler,
 }) => {
-  const handleClick = e => clickHandler(e.target.value);
+  const handleClick = () => clickHandler(name);
 
   const styleClasses = [wide ? 'wide' : '', color].join(' ');
   return (
