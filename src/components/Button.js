@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, wide, color }) => {
+const Button = ({
+  name, wide, color, clickHandler,
+}) => {
+  const handleClick = e => clickHandler(e.target.value);
+
   const styleClasses = [wide ? 'wide' : '', color].join(' ');
   return (
-    <button type="button" style={{ backgroundColor: color }} className={styleClasses}>
+    <button type="button" onClick={handleClick} style={{ backgroundColor: color }} className={styleClasses}>
       {name}
     </button>
   );
