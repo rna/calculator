@@ -17,7 +17,8 @@ const operate = (numberOne, numberTwo, operation) => {
       result = num1.times(num2);
       break;
     case '÷':
-      result = num1 === 0 ? 'Not divisible by Zero' : num1.div(num2);
+      // eslint-disable-next-line
+      result = (num2 == 0 ? 'Not divisible by Zero' : num1.div(num2));
       break;
     case '%':
       result = num1.div(100);
