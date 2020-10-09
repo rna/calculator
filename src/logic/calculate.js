@@ -19,10 +19,11 @@ const calculate = (data, buttonName) => {
       } else if (next === null) {
         total = (total + buttonName).toString();
       } else if (next !== null) {
-        next = (next + buttonName).toString();
+        next = Number(next + buttonName).toString();
       } else if (operation !== null && next === null) {
         total = buttonName;
         operation = null;
+        next = null;
       }
       break;
     case '+/-':
@@ -39,7 +40,7 @@ const calculate = (data, buttonName) => {
     case '-':
     case '÷':
     case 'x':
-      next = "";
+      next = '0';
       operation = buttonName;
       break;
     case 'AC': {
@@ -48,8 +49,18 @@ const calculate = (data, buttonName) => {
       operation = null;
       break;
     }
-    default:
+    case '.':
+      if (total === null || total === '0') {
+        total = '0.';
+      } else if (!total.includes('.')) {
+        total = (total + buttonName).toString();
+      } else if (next === null || next === '0') {
+        next = '0.';
+      } else if (!next.includes('.')) {
+        next = (next + buttonName).toString();
+      }
       break;
+    default:
   }
   return { total, next, operation };
 };
