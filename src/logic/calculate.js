@@ -18,6 +18,8 @@ const calculate = (data, buttonName) => {
         total = buttonName;
       } else if (next === null) {
         total = (total + buttonName).toString();
+      } else if (next === operation) {
+        next = buttonName;
       } else if (next !== null) {
         next = Number(next + buttonName).toString();
       } else if (operation !== null && next === null) {
@@ -47,7 +49,7 @@ const calculate = (data, buttonName) => {
     case '-':
     case '÷':
     case 'x':
-      next = '0';
+      next = buttonName;
       operation = buttonName;
       break;
     case 'AC': {
