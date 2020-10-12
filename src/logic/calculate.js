@@ -36,6 +36,13 @@ const calculate = (data, buttonName) => {
       operation = null;
       break;
     case '%':
+      if (operation) {
+        total = (operate(total, next, operation) / 100).toString();
+        next = null;
+      } else {
+        total = operate(total, undefined, buttonName).toString();
+      }
+      break;
     case '+':
     case '-':
     case '÷':
