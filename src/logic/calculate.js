@@ -29,8 +29,11 @@ const calculate = (data, buttonName) => {
       }
       break;
     case '+/-':
-      total *= -1;
-      next *= -1;
+      if (next !== null) {
+        next = (next * -1).toString();
+      } else {
+        total = (total * -1).toString();
+      }
       break;
     case '=':
       total = operate(total, next, operation);
