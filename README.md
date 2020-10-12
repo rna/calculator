@@ -2,8 +2,6 @@
 
 > A Calculator web application built on React library.
 
-<!-- ![Start page](./src/assets/images/screencapture.png) -->
-
 ## Table of Contents
 
 - [Features](#features)
@@ -18,12 +16,19 @@
 
 - Allows users to calculate the basic mathematical operations.
 
+## Screenshot
+
+![Start page](./screenshot.png)
+
 ## Built With
 
-- HTML
-- CSS
-- Javascript
+- Node.js
 - React
+- React-DOM
+- React-Create-App
+- npm
+- SASS
+- ES6
 - Heroku
 
 ## Live Demo
@@ -76,6 +81,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+[create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 
 ## 📝 License
 
